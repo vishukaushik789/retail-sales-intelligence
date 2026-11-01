@@ -233,7 +233,7 @@ if uploaded_file is not None:
                     genai.configure(api_key=api_key)
                     
                     try:
-                        model = genai.GenerativeModel('gemini-1.5-flash')
+                        model = genai.GenerativeModel('gemini-1.5-flash-latest')
                         user_question = st.chat_input("Ask GenAI (e.g., Draft a summary email for the team...)")
                         
                         if user_question:
